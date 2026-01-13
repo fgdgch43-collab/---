@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html lang="bn">
+    <head>
+      <meta charset="UTF-8">
+      <title>Offline বাজার হিসাব</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <div id="pageAlert" class="page-alert"></div>
+
+      <div class="container">
+
+        <h2>বাজার হিসাব</h2>
+
+        <h3>নতুন বাজার যোগ </h3>
+
+        <input id="item" class="big" placeholder="কি কিনলেন ">
+
+        <input id="unitPrice" class="big" type="number" placeholder="১ কেজির দাম ">
+
+      <div class="weight-group">
+
+        <input id="weight" type="number" placeholder="ওজন">
+        <select id="unit">
+        <option value="kg">কেজি</option>
+        <option value="g">গ্রাম</option>
+        <option value="liter">লিটার</option>
+        <option value="pcs">সংখ্যা</option>
+        </select>
+      
+
+      </div>
+      
+        
+
+        <button id="addBtn" onclick="addMarket()">যোগ করুন</button>
+        <button onclick="clearAll()">সকল ডাটা মুছে দিন</button>
+
+        <hr>
+
+        <h3>Filter by Day</h3>
+        <input type="date" id="filterDay">
+        <button onclick="applyFilter()">ফিল্টার করুন</button>
+        <button onclick="resetFilter()">রিসেট করুন</button>
+
+        <hr>
+
+        <h3>Market List</h3>
+        <ul id="marketList"></ul>
+
+        <!-- Totals Box Below Market List -->
+      <div class="totals-box">
+
+        <p>আজকের মোট টাকা: <span id="todayTotal">0</span> ৳</p>
+        <p>মাসের মোট টাকা: <span id="monthTotal">0</span> ৳</p>
+        <p>বছরের মোট টাকা: <span id="yearTotal">0</span> ৳</p>
+
+      </div>
+      
+        <button onclick="exportPDF()">Export to PDF</button>
+        
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+      <script src="model.js"></script>
+      
+
+    </body>
+  </html>

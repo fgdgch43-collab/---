@@ -1,0 +1,97 @@
+body{ 
+  font-family: Arial; 
+  background:#f2f2f2;
+ }
+
+.big{
+  width:96%;
+  padding:10px;
+  font-size:14px;
+  margin:10px 0;
+}
+
+.container{ 
+  max-width:600px; 
+  margin:20px auto; 
+  background:#fff; 
+  padding:20px; 
+  border-radius:10px; 
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+ }
+
+input, button, select{ 
+  font-size:14px; 
+  padding:10px; 
+  margin:5px 0;
+ }
+
+button{ 
+  background:#2e8b57; 
+  color:white; 
+  border:none; 
+  cursor:pointer;
+ }
+
+button:hover{ 
+  background:#256f46;
+ }
+
+ul{ 
+  list-style:none; 
+  padding-left:0; 
+  max-height:300px; 
+  overflow-y:auto;
+ }
+
+ul li{ 
+  background:#f9f9f9; 
+  margin:5px 0; 
+  padding:8px; 
+  border-radius:5px; 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+ }
+
+li button{ 
+  background:rgb(255, 0, 0); 
+  padding:5px 8px; 
+  font-size:12px; 
+  border-radius:5px; 
+  margin-left:5px; 
+  cursor:pointer;
+ }
+
+.weight-group{ 
+  display:flex;
+ }
+
+.weight-group input{ 
+  flex:1; 
+  margin-right:5px;
+ }
+
+.weight-group select{ 
+  width:100px;
+ }
+
+hr{ 
+  margin:20px 0;
+ }
+
+.totals-box{ 
+  background:#e0f7fa; 
+  padding:15px; 
+  border-radius:8px; 
+  margin-top:20px;
+ }
+.totals-box p{ 
+  margin:5px 0; 
+  font-weight:bold;
+ }
+
+ .ip-name{
+  display:flex;
+ }
+      
+
